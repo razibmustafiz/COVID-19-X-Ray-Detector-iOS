@@ -1,0 +1,12 @@
+{
+  "DomainType": "Classification",
+  "Platform": "CoreML",
+  "Flavor": "CoreMLFloat16",
+  "ExporterVersion": "2.0",
+  "ExportedDate": "2020-05-12T21:56:22.957515Z",
+  "IterationId": "ba5aaeaa-f93a-4c19-9f03-5e5100477ded",
+  "ModelFileName": "model.mlmodel",
+  "LabelFileName": "labels.txt",
+  "ModelFileSHA1": "652710d16a9a7e12abaf4f061d9e702f82508a2e",
+  "SchemaVersion": "1.0"
+}
