@@ -1,12 +1,20 @@
 ---
 services: cognitive-services,custom-vision
 platforms: Objective-C, iOS
-author: kojiw
+author: Razib Mustafiz
 ---
 
-# Sample iOS application for CoreML models exported from Custom Vision Service
+# COVID-19 Chest X-Ray Detector: A Real-time iOS Application
 
-This sample application demonstrates how to take a model exported from the [Custom Vision Service](https://www.customvision.ai) in the CoreML format and add it to an application for real-time image classification. 
+This repository contains the project file needed to compile the iOS application for a Realtime Smartphone based COVID-19 chest X-Ray detector. You can download the project folder to your MAC and than load it to your Xcode environment. This iOS project contains Tensorflow CNN model trained on thousands of X-Ray data from well curated and trusted repositories.It is trained to detect COVID-19 Chest X-Ray from Normal and Normal Viral Pneumonia infected Chest X-Ray images.
+
+This Mobile Application version of the COVID-19 detection system is a lightweight inference system designed to be used in a rural area where internet connection is not reliable or not available at all. Server dependent application architecture is not an ideal solution in this circumstances. That’s why we came up with a solution where AI engine will run locally in the Mobile device and will do real time X-Ray image prediction with its on device hardware. However, prediction result will greatly very with device’s camera quality and processor power since the AI engine runs locally. We suggest to use not less than iPhone 7.
+
+This is a Research project and is not intended to use in real life scenario.Further studies and experimentation required for practical application.
+
+
+
+This iOS application demonstrates how to take a trained model exported from the [Custom Vision Service](https://www.customvision.ai) in the CoreML format and add it to an application for real-time image classification. 
 
 ## Getting Started
 
@@ -15,7 +23,6 @@ This sample application demonstrates how to take a model exported from the [Cust
 - [XCode 10](https://developer.apple.com/xcode/)
 - [CocoaPods](https://cocoapods.org)
 - iOS device running iOS 11 or later
-- An account at [Custom Vision Service](https://www.customvision.ai) 
 
 ### Quickstart
 
@@ -24,21 +31,6 @@ This sample application demonstrates how to take a model exported from the [Cust
 3. Open the xcworkspace `CVS_ClassifierSample` in Xcode
 4. Build and run the sample on your iOS device
 
-
-### Replacing the sample model with your own object detector
-The model provided with the sample recognizes some fruits. To replace it with your own model exported from [Custom Vision Service](https://www.customvision.ai) do the following, and then build and launch the application:
-
-  1. [Create and train](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier) a classifer with the Custom Vision Service. You must choose a "compact" domain such as **General (compact)** to be able to export your classifier. If you have an existing classifier you want to export instead, convert the domain in "settings" by clicking on the gear icon at the top right. In setting, choose a "compact" model, Save, and Train your project.
-
-  2. Export your model by going to the Performance tab. Select an iteration trained with a compact domain, an "Export" button will appear. Click on *Export* then *CoreML* then *Export.* Click the *Download* button when it appears. A *.zip* file will download that contains all of these three files:
-      - CoreML model (`.mlmodel`)
-      - Export manifest file (`cvexport.manifest`).
-
-  3. Drop `model.mlmodel` and `cvexport.manifest` into your Xcode project's Fruit folder.
-
-  4. Build and run.
-
-*This sample has been tested on iPhone devices*
 
 
 ### Compatibility
@@ -68,5 +60,4 @@ This latest sample application relies on the new iOS library *Custom Vision infe
 - Link to [CoreML documentation](https://developer.apple.com/documentation/coreml)
 - Link Apple WWDC videos, samples, and materials for information on [CoreML](https://developer.apple.com/videos/play/wwdc2017/710) and [Vision Framework](https://developer.apple.com/videos/play/wwdc2017/506/)
 - Link to [Custom Vision Service Documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home)
-# COVID-19-X-Ray-Detector-iOS
-# COVID-19-X-Ray-Detector-iOS
+
