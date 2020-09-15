@@ -2,7 +2,6 @@
 services: cognitive-services,custom-vision
 platforms: Objective-C, iOS
 author: Razib Mustafiz
-razib.mustafiz[at]gmail.com
 ---
 
 # COVID-19 Chest X-Ray Detector: A Real-time iOS Application
