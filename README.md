@@ -69,3 +69,4 @@ This latest sample application relies on the new iOS library *Custom Vision infe
 - Link Apple WWDC videos, samples, and materials for information on [CoreML](https://developer.apple.com/videos/play/wwdc2017/710) and [Vision Framework](https://developer.apple.com/videos/play/wwdc2017/506/)
 - Link to [Custom Vision Service Documentation](https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home)
 # COVID-19-X-Ray-Detector-iOS
+# COVID-19-X-Ray-Detector-iOS
